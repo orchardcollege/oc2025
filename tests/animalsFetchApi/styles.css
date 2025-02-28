@@ -1,0 +1,23 @@
+.card__container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    /* justify-items: center; */ /* this is for grid */
+    /*align-items: center; */
+    align-content: center;
+    justify-content: center;
+}
+
+.card {
+    border: 1px solid grey;
+    width: 25rem;
+    padding: 0.3rem;
+    border-radius: 0.1rem;
+}
+
+.name {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+    font-size: 1.5rem;
+    color: grey;
+}
