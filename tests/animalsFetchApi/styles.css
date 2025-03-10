@@ -21,3 +21,53 @@
     font-size: 1.5rem;
     color: grey;
 }
+
+
+
+/* Main container for cards */
+.card__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+    justify-items: center;
+    align-items: start;
+    padding: 2rem;
+    margin: 0 auto;
+}
+
+/* Individual card style */
+.card {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    width: 100%;
+    max-width: 25rem;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Name styling */
+.name {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.6rem;
+    color: #333;
+    margin: 1rem;
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+
+/* Optional styling for other elements like text or description */
+.card p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    color: #777;
+    text-align: center;
+    padding: 0 1rem 1rem;
+}
