@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Computers List</title>
+</head>
+<body>
+  <h1>Computers Information</h1>
+  <ul id="computers"></ul>
+
+  <script>
+    // Fetch computer data from the back-end API
+    fetch('http://localhost:3000/api/computers') // Corrected API URL
+      .then(response => response.json())
+      .then(data => {
+        const list = document.getElementById('computers');
+        data.forEach(computer => {
+          const listItem = document.createElement('li');
+          // Display computer details (adjust field names to match your DB columns)
+          listItem.textContent = `${computer.name} is a ${computer.brand} computer in the ${computer.department} department.`;
+          list.appendChild(listItem);
+        });
+      })
+      .catch(error => {
+        console.error('Error fetching data:', error);
+      });
+  </script>
+</body>
+</html>
