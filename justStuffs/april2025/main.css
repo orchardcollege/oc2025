@@ -1,0 +1,26 @@
+/* From Uiverse.io by AqFox */ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    transition: all 600ms ease-in-out;
+    height: 100vh;
+    margin: auto;
+}
+
+.color-button {
+    margin: 5px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 50px;
+    height: 30px;
+  }

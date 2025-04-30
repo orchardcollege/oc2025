@@ -26,7 +26,7 @@ setInterval(() => {
     obstacleRightEdge > 50 && obstacleRightEdge < 80 && // within player range
     playerBottom < 30 // not jumping
   ) {
-    status.textContent = "💥 Game Over! Refresh to try again.";
+    status.textContent = "💥 Game Over! Refresh to try again. Remember you can jump using arrow up or space.";
     obstacle.style.animation = "none";
     obstacle.style.right = `${obstacleRightEdge}px`;
     clearInterval(this);
