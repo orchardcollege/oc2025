@@ -1,28 +1,6 @@
 
 
-document.addEventListener("DOMContentLoaded", function() {
-
-    /* let btn__1 = document.querySelector("#btn__1")
-    let btn__2 = document.querySelector("#btn__2")
-    let btn__3 = document.querySelector("#btn__3")
-
-    btn__1.addEventListener("click", () => {
-        document.body.className = "";
-        document.body.classList.add("body__blue");
-        console.log("btn clicked")
-    })
-    btn__2.addEventListener("click", () => {
-        document.body.className = "";
-        document.body.classList.add("body__yellow");
-        console.log("btn clicked")
-    })
-    btn__3.addEventListener("click", () => {
-        document.body.className = "";
-        document.body.classList.add("body__green");
-        console.log("btn clicked")
-    }) */
-
-    
+document.addEventListener("DOMContentLoaded", function() {   
 
         const colors = [
             "#E3B290", "#9A5A54", "#19A496", "#CA23DD", "#8B91FF", "#0FEEDB", "#47AC3D", "#63A4AD", "#0E0065", "#C588E5",
