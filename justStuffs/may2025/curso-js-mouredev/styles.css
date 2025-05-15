@@ -1,0 +1,27 @@
+html {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+ul {
+    display: flex;
+    gap: 1rem;
+}
+
+li {
+    text-decoration: none;
+    list-style: none;
+    border: 1px solid grey;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgb(231, 229, 229);
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 5px;
+}
+
+.change__background {
+    background-color: #e44141; /* or your desired effect */
+}
