@@ -1,0 +1,123 @@
+body {
+    position: relative;
+}
+
+.games__container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+    padding: 0.3rem;
+    border: 3px solid grey;
+    background-color: #33303b;
+    border-radius: 3px;
+}
+
+.game {
+    flex-basis: 45%;
+    border: 1px solid grey;
+    padding: 0.5rem;
+    border-radius: 3px;
+    background-color: #1f1f20;
+    box-shadow: 1px 2px 5px #9c9c9f;
+    /*  display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    
+    
+    background-color: #fff;
+     */
+}
+
+.game__title,
+.game__creator,
+.game__year__release,
+.game__genre {
+    color: #fff;
+
+}
+
+.game__title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 3px;
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.game__year__release {
+    font-size: 0.8rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.game__genre {
+    font-size: 0.8rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.game__creator {
+    font-size: 0.8rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+.menu__bar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu__btn {
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    box-shadow: 0 1px 5px grey;
+    cursor: pointer;
+}
+
+.menu__display {
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 50dvh;
+    z-index: 999;
+    transform: translateY(-100%);
+    background-color: blueviolet;
+    color: white;
+    opacity: 0.7;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: rgb(236, 233, 233);
+}
+
+@media screen and (width < 506px) {
+
+    .games__container {
+
+
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .game {
+        flex-basis: 100%;
+
+    }
+
+}

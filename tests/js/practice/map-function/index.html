@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="menuDisplay" class="menu__display">
+        <ul class="bg-blue-300">
+            <h2>Juegos:</h2>
+            <li><a href="./peleas.html">Juegos de peleas</a></li>
+            <li><a href="./carreras.html">Juegos de carreras</a></li>
+            <li><a href="./terror.html">Juegos de terror</a></li>
+        </ul>
+    </div>
+    <div class="menu__bar">
+        <div id="loops"></div>
+        <div class="flex gap-4 bg-blue-300 p-6 rounded m-4" id="methods">
+            <h3 class="text-2xl text-white font-bold">Styles with TailWindCSS</h3>
+        </div>
+        <h1>JS Map function</h1>
+        <button draggable="true" id="menuBtn" type="button" class="menu__btn">Open menú</button>
+    </div>
+    <div class="games__container" id="gamesList"></div>
+    <div class="games__container bg-green-300" id="gamesContainer"></div>
+    <script type="module" src="./main.js"></script>
+    <script type="module" src="./games-data.js"></script>
+</body>
+
+</html>

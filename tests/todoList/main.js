@@ -13,20 +13,21 @@ function updateDateTime() {
 }
 
 // Function to add a task
+
 function addTask() {
     let taskText = document.getElementById("taskInput").value.trim();
     if (taskText === "") return; // Prevent adding empty tasks
 
     // Create task object
-    let task = { 
-        text: taskText, 
-        completed: false, 
+    let task = {
+        text: taskText,
+        completed: false,
         important: taskText.includes("(i)") // Check if task contains "(i)"
     };
 
     // Get tasks from localStorage or create an empty array
     let tasks = JSON.parse(localStorage.getItem("tasks")) || [];
-    
+
     // Add new task and save
     tasks.push(task);
     localStorage.setItem("tasks", JSON.stringify(tasks));
@@ -104,7 +105,7 @@ function toggleTask(index) {
 function deleteTask(index) {
     const password = prompt("password?");
     const correctPassword = "oc"; // Set your password here
-    
+
     if (password === correctPassword) {
         let tasks = JSON.parse(localStorage.getItem("tasks"));
         tasks.splice(index, 1);
@@ -122,7 +123,7 @@ function loadTasks() {
 }
 
 // Listen for "Enter" key press to add a task
-document.getElementById("taskInput").addEventListener("keydown", function(event) {
+document.getElementById("taskInput").addEventListener("keydown", function (event) {
     if (event.key === "Enter") {
         addTask();
     }
